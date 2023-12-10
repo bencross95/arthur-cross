@@ -1,6 +1,8 @@
 ---
 title: Interview with xyz
-description: lorum ipsum 2
+date: 2024-01-01
+image: /assets/images/article-1.jpg
+description: description for project 1
 ---
 
 {{ description }}
@@ -8,4 +10,4 @@ description: lorum ipsum 2
 content spam
 
 
-oioi
+more writing

@@ -1,20 +1,18 @@
 ---
 title: Arthur Cross
 description: I am a writer and label owner, currently working at X
-layout: '/layouts/home.njk'
+layout: 'layouts/home.njk'
 ---
 
 Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-
 <a href="/contact">Contact page</a>
 
 {% for project in collections.project %}
+    <a href="{{ project.url }}">
+        <img src="{{ project.data.image }}">
+            <h2>
+                {{ project.data.title }}</h2>
+        </a>
+        <p>{{ project.data.description }}</p>
+    {% endfor %}
 
-<h2><a href="{{ project.url }}"> {{ project.data.title }}</a></h2>
-<p>{{ project.data.description }}</p>
-
-{% endfor %}
-
-more words
-
-<!-- {% include 'footer.njk' %} -->
