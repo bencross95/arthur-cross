@@ -6,6 +6,7 @@ layout: layout.html
 
 Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
+<a href="/contact">Contact page</a>
 
 {% for project in collections.project %}
 
@@ -13,5 +14,6 @@ Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, ege
 <p>{{ project.data.description }}</p>
 
 {% endfor %}
+
 
 

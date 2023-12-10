@@ -1,6 +1,6 @@
 ---
 title: Interview with xyz
-description: lorum ipsum
+description: lorum ipsum 2
 ---
 
-content for interview
+{{ description }}
