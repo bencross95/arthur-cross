@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact page</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header>
-        <h1>Contact page</h1>
+        <h1>{{ title }}</h1>
     </header>
     <main>
-        
-
-Tester contact page
-
-
-        <footer>
-<p>This is the persistant footer</p>
-</footer>
+        {{ content | safe }}
+        {% include 'footer.njk' %}
     </main>
 </body>
 </html>

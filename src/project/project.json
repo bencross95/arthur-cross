@@ -1,4 +1,4 @@
 {
-    "layout": "layout.html",
+    "layout": "layouts/project.njk",
     "tags": "project"
 }
