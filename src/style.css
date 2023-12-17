@@ -64,11 +64,19 @@ button {
     display: inline-block;
 }
 
-
+.sectionMargin {
+    margin-left: 24px;
+    margin-right: 24px;
+}
 
 @media (max-width: 1000px) {
     .tableDescription {
         display: none;
+    }
+
+    .sectionMargin {
+        margin-left: 16px;
+        margin-right: 16px;
     }
     
   }
