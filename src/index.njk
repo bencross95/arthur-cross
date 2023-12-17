@@ -19,7 +19,7 @@ Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, ege
 
 
 <div class="sectionMargin pt4 pb4">
-  <div class="overflow-auto">
+    <!-- <div class="overflow-auto">
     <table class="f6 w-100 center" cellspacing="0">
     <thead class="">
         <tr>
@@ -36,11 +36,33 @@ Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, ege
           <td class="pr3 b--black-20 mw6 listText"><span class="listTitle">{{ project.data.title }}</span><br><span class="tableDescription">{{ project.data.description }}</span></td>
           <td class=" pr3 b--black-20 listTitle">METAL Magazine issue 48</td>
           <td class=" pr3 b--black-20 listTitle">{{ project.data.date | postDate }}</td>
-          <td class=""><img  src="{{ project.data.image }}" alt="" height=auto width=100></td>
+          <td class=""><img src="{{ project.data.image }}" alt="" height=auto width=100></td>
           <td class=" pr3 b--black-20"><button>External link</button></td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
-  </div>
+  </div> -->
+
+  <div class="parent pt1">
+    <div class="div1 listTitle">{{ title }}<br>{{ description }}</div>
+    <div class="div2 listTitle">Contact<br><a href="">email@email.com</a></div>
+</div>
+
+    {% for project in collections.project %}
+    <div class="parent pt4">
+        <div class="div1 listTitle">{{ project.data.title }}</div>
+        <div class="div2 listTitle">METAL Magazine issue 48</div>
+        <div class="div3 listTitle">{{ project.data.date | postDate }}</div>
+        <div class="div4"><img src="{{ project.data.image }}" alt="" height=auto width=100></div>
+        <div class="div5"><button>External link</button></div>
+        <div class="div6 mw7">{{ project.data.description }}</div>
+    </div>
+    {% endfor %}
+
+
+
+
+
+
 </div>
