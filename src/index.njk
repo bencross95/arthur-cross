@@ -3,17 +3,44 @@ title: Arthur Cross
 description: I am a writer and label owner, currently working at X
 layout: 'layouts/home.njk'
 ---
-
+{# 
 Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-<a href="/contact">Contact page</a>
+<a href="/contact">Contact page</a> #}
 
-{% for project in collections.project %}
+{# {% for project in collections.project %}
     <a href="{{ project.url }}">
         <img src="{{ project.data.image }}">
             <h2>
                 {{ project.data.title }}</h2>
         </a>
         <p>{{ project.data.description }}</p>
-    {% endfor %}
+    {% endfor %} #}
 
-big ups
+
+
+<div class="pa4">
+  <div class="overflow-auto">
+    <table class="f6 w-100 center" cellspacing="0">
+              <thead>
+        <tr>
+          <th class="fw6 b--black-20 tl pb3 pr3 bg-white">ARTHUR CROSS<br>Writer and Label co-owner</th>
+          <th class="fw6 b--black-20 tl pb3 pr3 bg-white">Contact<br>email@email.com</th>
+          <th class="fw6 b--black-20 tl pb3 pr3 bg-white"></th>
+          <th class="fw6 b--black-20 tl pb3 pr3 bg-white"></th>
+          <th class="fw6 b--black-20 tl pb3 pr3 bg-white"></th>
+        </tr>
+      </thead>
+      <tbody class="lh-copy">
+        {% for project in collections.project %}
+        <tr>
+          <td class="pv3 pr3 b--black-20">{{ project.data.title }}</td>
+          <td class="pv3 pr3 b--black-20">METAL Magazine issue 48</td>
+          <td class="pv3 pr3 b--black-20">{{ project.data.date | postDate }}</td>
+          <td><img  src="{{ project.data.image }}" alt="" height=100 width=auto></td>
+          <td class="pv3 pr3 b--black-20"><button>External link</button></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
