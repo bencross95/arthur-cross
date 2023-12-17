@@ -1,3 +1,74 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+	font-family: Univers Bold Condensed;
+	src: url('/assets/fonts/UniversLTPro-BoldCond.woff2') format('woff2');
+	font-display: swap;
+    font-weight: bold;
+}
+
+@font-face {
+	font-family: Univers Condensed;
+	src: url('/assets/fonts/UniversLTPro-Condensed.woff2') format('woff2');
+	font-display: swap;
+    font-weight: normal;
+}
+
+
+body {
+    font-family: Univers Condensed, Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+td {
+    /* height: 50px; */
+    vertical-align: top;
+  }
+
+
+.listTitle {
+    font-family: Univers Bold Condensed;
+}
+
+.headingLight{
+    font-family: Univers Condensed;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.listText {
+    font-family: Univers Condensed;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+button {
+    font-family: Univers Bold Condensed;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 3px;
+}
+
+.tableDescription {
+    display: inline-block;
+}
+
+
+
+@media (max-width: 1000px) {
+    .tableDescription {
+        display: none;
+    }
+    
+  }

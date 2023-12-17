@@ -1,6 +1,6 @@
 ---
 title: Arthur Cross
-description: I am a writer and label owner, currently working at X
+description: Writer and Label co-owner
 layout: 'layouts/home.njk'
 ---
 {# 
@@ -21,23 +21,23 @@ Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, ege
 <div class="pa4">
   <div class="overflow-auto">
     <table class="f6 w-100 center" cellspacing="0">
-              <thead>
+    <thead class="">
         <tr>
-          <th class="fw6 b--black-20 tl pb3 pr3 bg-white">ARTHUR CROSS<br>Writer and Label co-owner</th>
-          <th class="fw6 b--black-20 tl pb3 pr3 bg-white">Contact<br>email@email.com</th>
-          <th class="fw6 b--black-20 tl pb3 pr3 bg-white"></th>
-          <th class="fw6 b--black-20 tl pb3 pr3 bg-white"></th>
-          <th class="fw6 b--black-20 tl pb3 pr3 bg-white"></th>
+          <th class="b--black-20 tl pb3 pr3 bg-white headingLight">{{ title }}<br>{{ description }}</th>
+          <th class="b--black-20 tl pb3 pr3 bg-white headingLight">Contact<br>email@email.com</th>
+          <th class="b--black-20 tl pb3 pr3 bg-white"></th>
+          <th class="b--black-20 tl pb3 pr3 bg-white"></th>
+          <th class="b--black-20 tl pb3 pr3 bg-white"></th>
         </tr>
       </thead>
-      <tbody class="lh-copy">
+      <tbody class="">
         {% for project in collections.project %}
         <tr>
-          <td class="pv3 pr3 b--black-20">{{ project.data.title }}</td>
-          <td class="pv3 pr3 b--black-20">METAL Magazine issue 48</td>
-          <td class="pv3 pr3 b--black-20">{{ project.data.date | postDate }}</td>
-          <td><img  src="{{ project.data.image }}" alt="" height=100 width=auto></td>
-          <td class="pv3 pr3 b--black-20"><button>External link</button></td>
+          <td class="pr3 b--black-20 mw6 listText"><span class="listTitle">{{ project.data.title }}</span><br><span class="tableDescription">{{ project.data.description }}</span></td>
+          <td class=" pr3 b--black-20 listTitle">METAL Magazine issue 48</td>
+          <td class=" pr3 b--black-20 listTitle">{{ project.data.date | postDate }}</td>
+          <td class=""><img  src="{{ project.data.image }}" alt="" height=auto width=100></td>
+          <td class=" pr3 b--black-20"><button>External link</button></td>
         </tr>
         {% endfor %}
       </tbody>
