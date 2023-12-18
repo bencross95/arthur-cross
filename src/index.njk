@@ -20,7 +20,7 @@ layout: 'layouts/home.njk'
 
 
 <div class="sectionMargin pb4">
-    {% for project in collections.project %}
+    {% for project in collections.project | reverse %}
     <div class="parent pt4 projectItemList">
         <div class="div1 listTitle">{{ project.data.title }}</div>
         <div class="div2 listTitle">METAL Magazine issue 48</div>
