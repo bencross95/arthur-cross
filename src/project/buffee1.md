@@ -3,7 +3,7 @@ title: BUFFEE Release
 date: 2024-01-01
 image: /assets/images/CarolinePolachek-square@2x.png
 description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-tag: Writing
+tag: Music Management & Marketing
 ---
 
 

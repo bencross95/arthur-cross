@@ -26,6 +26,10 @@ body {
     line-height: 18px;
 }
 
+.normallink {
+    text-decoration: none;
+    color: black;
+}
 
 .content-flexbox {
     height: 100vh;
@@ -94,7 +98,6 @@ button {
     width: 100%;
     grid-auto-rows: min-content;
     margin-right: 9em;
-
 }
 
 .div1 {
@@ -123,13 +126,73 @@ button {
 
 
 @media (max-width: 1000px) {
-    .tableDescription {
-        display: none;
-    }
-
     .sectionMargin {
         margin-left: 16px;
         margin-right: 16px;
+    }
+
+
+    .parent {
+        display: grid;
+        margin-right: 2em;
+    }
+
+}
+
+
+
+@media (max-width: 740px) {
+
+    .home-grid-flex {
+        padding-bottom: 32px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 4;
+        /* background-color:coral; */
+    }
+    
+    .div2 {
+        grid-area: 2 / 1 / 2 / 4;
+        /* background-color:coral; */
+        padding-top: 4px;
+    }
+    
+    .div3 {
+        grid-area: 3 / 1 / 3 / 4;
+        /* background-color:cadetblue; */
+        justify-self: auto;
+        padding-top: 4px;
+    }
+    
+    .div4 {
+        grid-area: 4 / 1 / 4 / 4;
+        padding-top: 12px;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .home-grid-flex {
+        padding-bottom: 24px;
+        flex-direction: column;
+        /* border-bottom: 1px; */
+    }
+
+    .home-grid-end {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding-top: 12px;
+        row-gap: 16px;
+    }
+
+    
+    .home-grid-flex {
+        border-bottom: 2px solid #C4C4C4;
+        margin-bottom: 32px;
     }
 
 }
