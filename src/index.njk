@@ -17,23 +17,9 @@ layout: 'layouts/home.njk'
         <p>{{ project.data.description }}</p>
     {% endfor %}  -->
 
-
-<!-- 
-<div class="sectionMargin pb4">
-    {% for project in collections.project | reverse %}
-    <div class="parent pt3 projectItemList">
-        <div class="div1 listTitle">{{ project.data.title }}</div>
-        <div class="div2 listTitle">METAL Magazine issue 48</div>
-        <div class="div3 listTitle">{{ project.data.date | postDate }}</div>
-        <div class="div4"><img src="{{ project.data.image }}" alt="" height=auto width=140></div>
-        <div class="div5"><button onclick="window.location.href='{{ project.url }}';"">Open</button></div>
-        <div class="div6 mw7">{{ project.data.description }}</div>
+    <div class="arthur3d-div">
+        <model-viewer loading="eager" rotation-per-second="5deg" camera-orbit="300deg 55deg 2m" auto-rotate id="model"  alt="" src="/assets/images/arthur3d.glb" shadow-intensity="1"></model-viewer>
     </div>
-    {% endfor %}
-</div> -->
-
-
-
 
 <div class="sectionMargin pb4">
     {% for project in collections.project | reverse %}
