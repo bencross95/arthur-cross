@@ -14,12 +14,21 @@
 <body>
     <div class="content-flexbox flex flex-column justify-between">
         <div>
-            <header>
-                <!-- {% include 'header.njk' %} -->
-            </header>
+
+            <header class="sectionMargin project-title">
+              <h1 class="mb3 mt0">{{ title }}</h1>
+              <time class="f6 ttu tracked gray">{{ date | postDate }}</time>
+          </header>
 
             <main>
-                {{ content | safe }}
+
+              <div class="sectionMargin pb4">
+                <div class="measure pt2">
+                  {{ content | safe }}
+            
+              </div>
+    
+                
             </main>
         </div>
         <footer>

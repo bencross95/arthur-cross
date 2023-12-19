@@ -6,23 +6,4 @@ description: Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta 
 tag: Writing
 ---
 
-<header class="sectionMargin project-title">
-    <h1 class="mb3 mt0">{{ title }}</h1>
-    <time class="f6 ttu tracked gray">{{ date | postDate }}</time>
-</header>
-
-<div class="sectionMargin pb4">
-    <div class="measure pt4">
-        {{ description }}
-
-        [METAL magazine interview link](https://metalmagazine.eu/post/jessie-ware-2)
-
-### Credits
-
-- First item
-- Second item
-- Third item
-
-      </div>
-
-  </div>
+Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
