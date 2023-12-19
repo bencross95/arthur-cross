@@ -7,7 +7,7 @@ tag: Music Management & Marketing
 ---
 
 
-<header class="sectionMargin pt4">
+<header class="sectionMargin project-title">
     <h1 class="mb3 mt0">{{ title }}</h1>
     <time class="f6 ttu tracked gray">{{ date | postDate }}</time>
 </header>
