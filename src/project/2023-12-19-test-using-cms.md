@@ -11,7 +11,7 @@ image: /assets/images/arthurtestimg.png
 ---
 This is tester content
 
-[With a link](www.google.com)
+[With a link](www.google.com)[](www.google.com)
 
 # Title 1
 
