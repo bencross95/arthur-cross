@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
 </head>
+
 <body>
-    <header>
-        {% include 'header.njk' %}
-    </header>
-    <main>
-        {{ content | safe }}
-    </main>
-    <footer>
-        {% include 'footer.njk' %}
-    </footer>
+    <div class="content-flexbox flex flex-column justify-between">
+        <div>
+            <header>
+                {% include 'header.njk' %}
+            </header>
+
+            <main>
+                {{ content | safe }}
+            </main>
+        </div>
+        <footer>
+            {% include 'footer.njk' %}
+        </footer>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="/animation.js"></script>
 </body>

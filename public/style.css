@@ -27,6 +27,11 @@ body {
 }
 
 
+.content-flexbox {
+    height: 100vh;
+}
+
+
 td {
     /* height: 50px; */
     vertical-align: top;

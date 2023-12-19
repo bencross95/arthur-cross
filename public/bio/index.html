@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>Contact page</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
 </head>
@@ -13,15 +13,28 @@
     <div class="content-flexbox flex flex-column justify-between">
         <div>
             <header>
-                {% include 'header.njk' %}
+                <div class="sectionMargin pt4 pb4">
+  <div class="parent pt1">
+    <div class="div1 headingLight"><a href="/index">Arthur Cross</a><br>Writer and Label co-owner</div>
+    <div class="div2 headingLight">Contact<br><a href="">email@email.com</a></div>
+  </div>
+</div>
             </header>
 
             <main>
-                {{ content | safe }}
+                
+
+Short bio
+- phone number etc
+
+
+
             </main>
         </div>
         <footer>
-            {% include 'footer.njk' %}
+            <div class="sectionMargin pt4 pb4">
+<p>© Copyrights <span id="year"></span> by Arthur Cross. All rights reserved.</p>
+</div>
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
