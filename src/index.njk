@@ -38,7 +38,8 @@ layout: 'layouts/home.njk'
 <div class="sectionMargin pb4">
     {% for project in collections.project | reverse %}
 
-    <div class="flex justify-between home-grid-flex mt3">
+    <div class="flex justify-between home-project-div mt3">
+
         <div class="parent projectItemList">
             <div class="div1 listTitle">{{ project.data.title }}</div>
             <div class="div2 listTitle">{{ project.data.tag }}</div>
@@ -46,9 +47,10 @@ layout: 'layouts/home.njk'
             <div class="div4 mw7">{{ project.data.description }}</div>
         </div>
         <div class="home-grid-end flex justify-between">
-            <div class=""><img src="{{ project.data.image }}" alt="" height=auto width=140></div>
+            <div class="project-list-img"><img src="{{ project.data.image }}" alt="" height=auto width=auto></div>
             <div class=""><button onclick="window.location.href='{{ project.url }}';"">Open</button></div>
         </div>
+
     </div>
 
     {% endfor %}
