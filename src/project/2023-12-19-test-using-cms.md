@@ -7,6 +7,7 @@ description: Test description. Cras mattis consectetur purus sit amet fermentum.
   at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 tag: Test tag
 thumbnail: /assets/images/arthurtestimg.png
+image: /assets/images/arthurtestimg.png
 ---
 This is tester content
 
