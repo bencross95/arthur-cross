@@ -18,16 +18,38 @@ layout: 'layouts/home.njk'
     {% endfor %}  -->
 
 
-
+<!-- 
 <div class="sectionMargin pb4">
     {% for project in collections.project | reverse %}
-    <div class="parent pt4 projectItemList">
+    <div class="parent pt3 projectItemList">
         <div class="div1 listTitle">{{ project.data.title }}</div>
         <div class="div2 listTitle">METAL Magazine issue 48</div>
         <div class="div3 listTitle">{{ project.data.date | postDate }}</div>
-        <div class="div4"><img src="{{ project.data.image }}" alt="" height=auto width=100></div>
+        <div class="div4"><img src="{{ project.data.image }}" alt="" height=auto width=140></div>
         <div class="div5"><button onclick="window.location.href='{{ project.url }}';"">Open</button></div>
         <div class="div6 mw7">{{ project.data.description }}</div>
     </div>
+    {% endfor %}
+</div> -->
+
+
+
+
+<div class="sectionMargin pb4">
+    {% for project in collections.project | reverse %}
+
+    <div class="flex justify-between home-grid-flex mt3">
+        <div class="parent projectItemList">
+            <div class="div1 listTitle">{{ project.data.title }}</div>
+            <div class="div2 listTitle">{{ project.data.tag }}</div>
+            <div class="div3 listTitle">{{ project.data.date | postDate }}</div>
+            <div class="div4 mw7">{{ project.data.description }}</div>
+        </div>
+        <div class="home-grid-end flex justify-between">
+            <div class=""><img src="{{ project.data.image }}" alt="" height=auto width=140></div>
+            <div class=""><button onclick="window.location.href='{{ project.url }}';"">Open</button></div>
+        </div>
+    </div>
+
     {% endfor %}
 </div>

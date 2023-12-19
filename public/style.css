@@ -74,45 +74,48 @@ button {
     margin-right: 24px;
 }
 
+.home-grid-flex {
+    /* background-color: aqua; */
+}
 
-
+.home-grid-end {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    align-content: start;
     position: relative;
+    width: 100%;
+    grid-auto-rows: min-content;
+    margin-right: 9em;
+
 }
 
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
+    /* background-color:coral; */
 }
 
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
+    /* background-color:coral; */
 }
 
 .div3 {
     grid-area: 1 / 3 / 2 / 4;
+    /* background-color:cadetblue; */
     justify-self: end;
 }
 
 .div4 {
-    grid-area: 1 / 4 / 3 / 5;
-    justify-self: end;
-    /* position:fixed; */
-}
-
-.div5 {
-    grid-area: 1 / 5 / 2 / 6;
-    justify-self: end;
-}
-
-.div6 {
     grid-area: 2 / 1 / 3 / 4;
+    padding-top: 8px;
 }
 
 
