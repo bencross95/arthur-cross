@@ -190,10 +190,13 @@ button {
 @media (max-width: 740px) {
 
     .arthur3d-div {
-        opacity: 0.2;
         display: none;
-
     }
+
+    .arthur3d-background {
+        display: none;
+    }
+
 
     .headingLight {
         font-size: 40px;
@@ -236,7 +239,10 @@ button {
 @media (max-width: 600px) {
 
     .arthur3d-div {
-        opacity: 0.2;
+        display: none;
+    }
+
+    .arthur3d-background {
         display: none;
     }
 
