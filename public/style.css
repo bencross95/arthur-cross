@@ -28,13 +28,13 @@ body {
 
 .arthur3d-div {
     position: fixed;
-    z-index: -100;
+    z-index: 100;
     left: -100vw;
     top: 0;
     width: 200vw;
     height: 200vh;
     overflow: hidden;
-    /* pointer-events: none; */
+    pointer-events: none;
 }
 
 model-viewer {
