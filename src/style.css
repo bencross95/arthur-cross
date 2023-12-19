@@ -139,6 +139,9 @@ button {
     margin-top: 80px;
 }
 
+.home-header-div {
+    padding-top: 200px;
+}
 
 
 @media (max-width: 1000px) {
@@ -198,6 +201,10 @@ button {
 
 
 @media (max-width: 600px) {
+
+    .home-header-div {
+        padding-top: 16px;
+    }
 
     .home-project-div {
         padding-bottom: 24px;
