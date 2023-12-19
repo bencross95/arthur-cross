@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+collections:
+  - name: "project" # Used in routes, e.g., /admin/collections/blog
+    label: "Project" # Used in the UI
+    folder: "src/project"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
