@@ -2,7 +2,7 @@
 title: Sevdaliza Interview
 date: 2022-08-22
 image: /assets/images/Sevdaliza-square@2x.png
-description: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+description: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 tag: Writing
 ---
 

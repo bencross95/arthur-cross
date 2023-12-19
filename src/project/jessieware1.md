@@ -6,7 +6,7 @@ description: Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec
 tag: Writing
 ---
 
-<header class="sectionMargin pt4">
+<header class="sectionMargin project-title">
     <h1 class="mb3 mt0">{{ title }}</h1>
     <time class="f6 ttu tracked gray">{{ date | postDate }}</time>
 </header>

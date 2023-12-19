@@ -47,10 +47,11 @@ td {
 }
 
 .headingLight {
-    font-family: Univers Condensed;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
+    font-family: Univers Bold Condensed;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
 }
 
 .listText {
@@ -133,7 +134,10 @@ button {
     padding-top: 8px;
 }
 
-
+.project-title {
+    /* padding-top: 80px; */
+    margin-top: 80px;
+}
 
 
 
@@ -154,6 +158,10 @@ button {
 
 
 @media (max-width: 740px) {
+
+    .headingLight {
+        font-size: 40px;
+    }
 
     .home-project-div:hover {
             background-color: #ffffff;
