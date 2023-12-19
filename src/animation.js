@@ -17,3 +17,9 @@ gsap.fromTo(
   { opacity: 0 },
   { opacity: 1, duration: 8, delay: 3 }
 );
+
+gsap.fromTo(
+  ".arthur3d-background",
+  { opacity: 0 },
+  { opacity: 1, duration: 8, delay: 3 }
+);

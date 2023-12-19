@@ -18,8 +18,13 @@ layout: 'layouts/home.njk'
     {% endfor %}  -->
 
     <div class="arthur3d-div">
-        <model-viewer class="arthur3d-model" loading="eager" rotation-per-second="5deg" camera-orbit="300deg 55deg 2m" auto-rotate id="model"  alt="" src="/assets/images/arthur3d.glb" shadow-intensity="1"></model-viewer>
+        <model-viewer class="arthur3d-model" rotation-per-second="2deg" camera-orbit="100deg 55deg 2m" auto-rotate id="model-f"  alt="" src="/assets/images/arthur3d.glb" shadow-intensity="1"></model-viewer>
     </div>
+
+    <div class="arthur3d-background">
+        <model-viewer class="arthur3d-model" rotation-per-second="-2deg" camera-orbit="10deg 55deg 2m" auto-rotate id="model-b"  alt="" src="/assets/images/face.glb" shadow-intensity="1"></model-viewer>
+    </div>
+
 
 <div class="sectionMargin pb4">
     {% for project in collections.project | reverse %}

@@ -37,6 +37,17 @@ body {
     pointer-events: none;
 }
 
+.arthur3d-background {
+    position: fixed;
+    z-index: -100;
+    left: -100vw;
+    top: 0;
+    width: 200vw;
+    height: 200vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+
 model-viewer {
     width: 100%;
     height: 100%;
