@@ -191,7 +191,8 @@ button {
 
     .arthur3d-div {
         opacity: 0.2;
-        /* display: none; */
+        display: none;
+
     }
 
     .headingLight {
@@ -236,7 +237,7 @@ button {
 
     .arthur3d-div {
         opacity: 0.2;
-        /* display: none; */
+        display: none;
     }
 
     .home-header-div {
