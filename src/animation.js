@@ -12,14 +12,14 @@ tl.to(".projectItemList", {
   stagger: 0.07, // 0.1 seconds between when each ".box" element starts animating
 });
 
-gsap.fromTo(
-  ".arthur3d-div",
-  { opacity: 0 },
-  { opacity: 1, duration: 8, delay: 3 }
-);
+// gsap.fromTo(
+//   ".arthur3d-div",
+//   { opacity: 0 },
+//   { opacity: 1, duration: 8, delay: 3 }
+// );
 
-gsap.fromTo(
-  ".arthur3d-background",
-  { opacity: 0 },
-  { opacity: 1, duration: 8, delay: 3 }
-);
+// gsap.fromTo(
+//   ".arthur3d-background",
+//   { opacity: 0 },
+//   { opacity: 1, duration: 8, delay: 3 }
+// );
