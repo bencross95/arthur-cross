@@ -22,7 +22,7 @@ function init() {
 
     new RGBELoader()
         .setPath( 'assets/3d/' )
-        .load( 'table_mountain_1_puresky_1k.hdr', function ( texture ) {
+        .load( 'rustig_koppie_puresky_2k.hdr', function ( texture ) {
 
             texture.mapping = THREE.EquirectangularReflectionMapping;
 
@@ -70,6 +70,7 @@ function init() {
 
     document.addEventListener('mousemove', function(e){
     	let scale = -0.001;
+        // let scale = -0.02;
     	orbit.rotateY( e.movementX * scale );
       orbit.rotateX( e.movementY * scale ); 
       orbit.rotation.z = 0; //this is important to keep the camera level..
