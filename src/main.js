@@ -4,7 +4,15 @@ import { GUI } from "three/addons/libs/lil-gui.module.min.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { RGBELoader } from "three/addons/loaders/RGBELoader.js";
 
-let renderer, scene, camera;
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
+
+import { RGBShiftShader } from "three/addons/shaders/RGBShiftShader.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+
+
+let renderer, scene, camera, composer;
 let model;
 
 const gui = new GUI();
@@ -32,6 +40,8 @@ function init() {
 
   new OrbitControls(camera, renderer.domElement);
 
+  
+
   // Bits
   new RGBELoader()
     .setPath("assets/3d/")
@@ -40,6 +50,8 @@ function init() {
 
       scene.background = texture;
       scene.environment = texture;
+
+
 
       animate();
 
@@ -55,19 +67,13 @@ function init() {
 
         scene.add(model);
 
-
         model.position.x = 0;
         model.position.y = 2;
         model.position.z = -2;
 
         animate();
-
-
       });
     });
-
-
-
 
   // Sky
 
@@ -102,18 +108,29 @@ function init() {
     camera.position.x = parameters.x;
     camera.position.y = parameters.y;
     camera.position.z = parameters.z;
-
-    // console.log(camera.position);
-    // console.log(model);
-    // console.log(gltf);
   }
 
   gui.add(parameters, "x", -50, 50, 0.01).onChange(update);
   gui.add(parameters, "y", -50, 50, 0.01).onChange(update);
   gui.add(parameters, "z", 0, 50, 0.01).onChange(update);
 
-  //   camera.position.set(0, 0, 1.5);
-  //   gui.add(camera.position, "myNumber", [0, 1, 2]).onChange(update);
+  gui.hide()
+
+  // postprocessing
+
+  composer = new EffectComposer(renderer);
+  composer.addPass(new RenderPass(scene, camera));
+
+
+  const effect1 = new ShaderPass(RGBShiftShader);
+  effect1.uniforms["amount"].value = 0.001;
+  composer.addPass(effect1);
+
+
+  const effect3 = new OutputPass();
+  composer.addPass(effect3);
+
+
 
   window.addEventListener("resize", onWindowResize);
 }
@@ -126,8 +143,8 @@ function onWindowResize() {
   animate();
 }
 
-// model.rotation.x += 0.01;
-// model.rotation.y += 0.01;
+
+
 
 function animate() {
   requestAnimationFrame(animate);
@@ -137,11 +154,9 @@ function animate() {
     model.rotation.y += 0.0002; // Rotate around the y-axis
     model.rotation.z += 0.0001; // Rotate around the z-axis
 
-    // Other animation logic here, if any
   }
 
-  // model.rotation.y = 2;
-  // model.rotation.z = 0.5* ( 1 +  Math.sin( time ) );
+  composer.render(scene, camera);
 
-  renderer.render(scene, camera);
+  // renderer.render(scene, camera);
 }
