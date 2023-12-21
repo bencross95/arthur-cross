@@ -11,6 +11,7 @@ import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
 import { RGBShiftShader } from "three/addons/shaders/RGBShiftShader.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 
+// import { gsap } from "gsap";
 
 let renderer, scene, camera, composer;
 let model;
@@ -71,6 +72,18 @@ function init() {
         model.position.y = 2;
         model.position.z = -2;
 
+        // model.children[0].material.opacity = 0
+        
+        // model.children[0].material.transparent = true
+
+        // model.children[0].material.emissive = new THREE.Color( 0xff0000 );
+        model.children[0].material.emissive = new THREE.Color( 0xffffff );
+
+        console.log(model.children[0].material.emissive);
+        // model.material.wireframe = false;
+
+        // gsap.to(model.position, { duration: 10, ease: "power2.out", z: 2 });
+
         animate();
       });
     });
@@ -115,6 +128,10 @@ function init() {
   gui.add(parameters, "z", 0, 50, 0.01).onChange(update);
 
   gui.hide()
+
+  gsap.to(camera.position, { duration: 10, ease: "power2.out", z: 0 });
+  
+
 
   // postprocessing
 
