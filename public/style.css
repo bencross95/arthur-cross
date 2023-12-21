@@ -230,6 +230,14 @@ button {
 
 @media (max-width: 600px) {
 
+    canvas {
+        display: none !important;
+    }
+
+    body {
+        background-color: #E4EDF5;
+    }
+
     .home-header-div {
         padding-top: 16px;
     }
