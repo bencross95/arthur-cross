@@ -40,7 +40,7 @@ import * as THREE from 'three';
 				const context = canvas.getContext( '2d' );
 				const gradient = context.createLinearGradient( 0, 0, 0, 32 );
 				gradient.addColorStop( 0.0, '#5791BF' );
-				gradient.addColorStop( 0.5, '#ADC5D8' );
+				gradient.addColorStop( 0.5, '#ffffff' );
 				gradient.addColorStop( 1.0, '#D6E6F2' );
 				context.fillStyle = gradient;
 				context.fillRect( 0, 0, 1, 32 );
