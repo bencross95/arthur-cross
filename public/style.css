@@ -35,7 +35,7 @@ canvas {
     left: 0;
     top: 0;
     z-index: -100;
-  }
+}
 
 .normallink {
     text-decoration: none;
@@ -89,8 +89,22 @@ button {
 .project-list-img {
     width: 140px;
     height: 140px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.7;
+    mix-blend-mode: multiply;
+    /* mix-blend-mode: screen; */
+    /* mix-blend-mode: overlay; */
 }
 
+.home-project-div:hover .project-list-img {
+    -webkit-filter: none;
+    filter: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    transition: filter 0.2s;
+    transition: -webkit-filter 0.2s;
+}
 
 .sectionMargin {
     margin-left: 24px;
@@ -101,10 +115,10 @@ button {
     /* background-color: aqua; */
 }
 
-.home-project-div:hover{
-    background-color:#ffffff;
+.home-project-div:hover {
+    background-color: #ffffff;
     transition: background-color 0.2s;
- }
+}
 
 .home-grid-end {
     display: flex;
@@ -172,7 +186,7 @@ button {
 
 
 @media (max-width: 740px) {
-    
+
     .listTitle {
         font-size: 24px;
         padding-bottom: 8px;
@@ -188,10 +202,10 @@ button {
         font-size: 40px;
     }
 
-    .home-project-div:hover{
+    .home-project-div:hover {
         background-color: #ffffffda;
         transition: background-color 0.2s;
-     }
+    }
 
     .home-project-div {
         padding-bottom: 32px;
@@ -206,20 +220,20 @@ button {
         grid-area: 1 / 1 / 2 / 4;
         /* background-color:coral; */
     }
-    
+
     .div2 {
         grid-area: 2 / 1 / 2 / 4;
         /* background-color:coral; */
         padding-top: 4px;
     }
-    
+
     .div3 {
         grid-area: 3 / 1 / 3 / 4;
         /* background-color:cadetblue; */
         justify-self: auto;
         padding-top: 4px;
     }
-    
+
     .div4 {
         grid-area: 4 / 1 / 4 / 4;
         padding-top: 12px;
@@ -256,7 +270,7 @@ button {
         row-gap: 16px;
     }
 
-    
+
 
     .home-project-div {
         background-color: #ffffffda;
