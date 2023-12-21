@@ -172,18 +172,34 @@ button {
 
 
 @media (max-width: 740px) {
+    
+    .listTitle {
+        font-size: 24px;
+        padding-bottom: 8px;
+    }
 
+    .listDescription {
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 12px;
+    }
 
     .headingLight {
         font-size: 40px;
     }
 
-    .home-project-div:hover {
-            background-color: #ffffff00;
+    .home-project-div:hover{
+        background-color: #ffffffda;
+        transition: background-color 0.2s;
      }
 
     .home-project-div {
         padding-bottom: 32px;
+        padding-top: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: #ffffff;
+        border-radius: 16px;
     }
 
     .div1 {
@@ -233,9 +249,9 @@ button {
     }
 
     
+
     .home-project-div {
-        border-bottom: 2px solid #C4C4C4;
-        margin-bottom: 32px;
+        background-color: #ffffffda;
     }
 
 }

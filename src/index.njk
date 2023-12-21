@@ -27,7 +27,7 @@ layout: 'layouts/home.njk'
             <div class="div1 listTitle">{{ project.data.title }}</div>
             <div class="div2 listTitle">{{ project.data.tag }}</div>
             <div class="div3 listTitle">{{ project.data.date | postDate }}</div>
-            <div class="div4 mw7">{{ project.data.description }}</div>
+            <div class="div4 mw7 listDescription">{{ project.data.description }}</div>
         </div>
         <div class="home-grid-end flex justify-between">
             <div class="project-list-img"><img src="{{ project.data.image }}" alt="" height=auto width=auto></div>
