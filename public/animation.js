@@ -12,16 +12,19 @@ tl.to(".projectItemList", {
   stagger: 0.07, // 0.1 seconds between when each ".box" element starts animating
 });
 
-// gsap.fromTo(
-//   ".arthur3d-div",
-//   { opacity: 0 },
-//   { opacity: 1, duration: 8, delay: 3 }
-// );
 
-// gsap.fromTo(
-//   ".arthur3d-background",
-//   { opacity: 0 },
-//   { opacity: 1, duration: 8, delay: 3 }
-// );
+
+
+function openInfo() {
+  var hiddenInfo = document.getElementById("hidden-info");
+  if (hiddenInfo.style.display === "block") {
+    hiddenInfo.style.display = "none";
+    document.getElementById("info-button").innerHTML = "[info]";
+  } else {
+    hiddenInfo.style.display = "block";
+    document.getElementById("info-button").innerHTML = "[close]";
+  }
+  console.log(hiddenInfo.style.display);
+}
 
 

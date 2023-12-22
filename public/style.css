@@ -25,6 +25,7 @@ body {
     font-size: 16px;
     line-height: 18px;
     opacity: 0;
+    color: #677589;
 }
 
 canvas {
@@ -37,9 +38,14 @@ canvas {
     z-index: -100;
 }
 
+#hidden-info {
+    display: none;
+    /* display: block; */
+}
+
 .normallink {
     text-decoration: none;
-    color: black;
+    color: #677589;
 }
 
 .content-flexbox {
@@ -174,6 +180,19 @@ button {
     margin-bottom: 24px;
 }
 
+
+.info-button {
+    font-size: 30px;
+    vertical-align:top;
+    color: #677589;
+    cursor: pointer;
+    line-height: 43px;
+    /* display: inline; */
+}
+
+
+
+
 @media (max-width: 1000px) {
     .sectionMargin {
         margin-left: 16px;
@@ -185,6 +204,8 @@ button {
         display: grid;
         margin-right: 2em;
     }
+
+    
 
 }
 
@@ -205,6 +226,15 @@ button {
 
     .headingLight {
         font-size: 40px;
+    }
+
+    .info-button {
+        font-size: 28px;
+        vertical-align:middle;
+        color: #677589;
+        cursor: pointer;
+        line-height: auto;
+        /* display: inline; */
     }
 
     .home-project-div:hover {
