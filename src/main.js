@@ -38,6 +38,8 @@ function init() {
     100
   );
   camera.position.set(0, 0, 1.5);
+  
+  console.log(camera.fov)
 
   new OrbitControls(camera, renderer.domElement);
 
@@ -79,10 +81,13 @@ function init() {
         // model.children[0].material.emissive = new THREE.Color( 0xff0000 );
         model.children[0].material.emissive = new THREE.Color( 0xffffff );
 
-        console.log(model.children[0].material.emissive);
+        // console.log(model.children[0].material.emissive);
         // model.material.wireframe = false;
 
         // gsap.to(model.position, { duration: 10, ease: "power2.out", z: 2 });
+
+        
+
 
         animate();
       });
@@ -177,3 +182,6 @@ function animate() {
 
   // renderer.render(scene, camera);
 }
+
+
+gsap.fromTo("canvas", { opacity: 0 }, { opacity: 0.5, delay: 1, duration: 3 });
