@@ -56,7 +56,7 @@ function init() {
 
 
 
-      animate();
+      // animate();
 
       // model
 
@@ -89,7 +89,7 @@ function init() {
         
 
 
-        animate();
+        // animate();
       });
     });
 
@@ -190,19 +190,16 @@ arthurLink.addEventListener('mouseout', () => {
 
 
 function animate() {
-  requestAnimationFrame(animate);
-
-
+  
 
   if (model) {
     model.rotation.x += 0.0001; // Rotate around the x-axis
     model.rotation.y += 0.0002; // Rotate around the y-axis
     model.rotation.z += 0.0001; // Rotate around the z-axis
-
-
   }
 
   composer.render(scene, camera);
+  requestAnimationFrame(animate);
 
   // renderer.render(scene, camera);
 }
