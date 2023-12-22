@@ -208,12 +208,18 @@ button {
     }
 
     .home-project-div {
-        padding-bottom: 32px;
-        padding-top: 24px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-bottom: 40px;
+        padding-top: 32px;
+        padding-left: 24px;
+        padding-right: 24px;
         background-color: #ffffff;
         border-radius: 16px;
+    }
+
+    .project-list-img {
+        -webkit-filter: none;
+        filter: none;
+        opacity: 0.8;
     }
 
     .div1 {
@@ -244,6 +250,19 @@ button {
 
 @media (max-width: 600px) {
 
+    .headingLight {
+        font-size: 28px;
+    }
+
+    .home-project-div {
+        padding-bottom: 40px;
+        padding-top: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: #ffffff;
+        border-radius: 16px;
+    }
+
     canvas {
         display: none !important;
     }
@@ -269,7 +288,6 @@ button {
         padding-top: 12px;
         row-gap: 16px;
     }
-
 
 
     .home-project-div {
