@@ -28,6 +28,15 @@ body {
     color: #677589;
 }
 
+h1 {
+    font-family: Univers Bold Condensed;
+}
+
+
+.project-body {
+    background-color: #ffffff;
+}
+
 canvas {
     width: 100vw;
     height: 100vh;
@@ -90,6 +99,7 @@ button {
     letter-spacing: -0.2px;
 
 }
+
 
 
 .project-list-img {
