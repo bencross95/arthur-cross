@@ -166,22 +166,22 @@ function onWindowResize() {
 }
 
 
-// Mouse interaction with ARTHUR CROSS
+// Mouse interaction with INFO
 
 const arthurLink = document.getElementsByClassName('arthurLink')[0];
 
 
 arthurLink.addEventListener('mouseover', () => {
   if (model) {
-    model.rotation.x += 0.1;
-    model.rotation.y += 0.1;
+    model.rotation.x += 0.2;
+    model.rotation.y += 0.2;
     model.children[0].material.emissive = new THREE.Color( 0xDFFF1C );
 }
 });
 
 arthurLink.addEventListener('mouseout', () => {
-  model.rotation.x += 0.1;
-  model.rotation.y += 0.1;
+  model.rotation.x += 0.2;
+  model.rotation.y += 0.2;
   model.children[0].material.emissive = new THREE.Color( 0xFFFFFF );
 });
 
