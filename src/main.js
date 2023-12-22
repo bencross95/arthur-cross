@@ -39,7 +39,7 @@ function init() {
   );
   camera.position.set(0, 0, 1.5);
   
-  console.log(camera.fov)
+  // console.log(camera.fov)
 
   new OrbitControls(camera, renderer.domElement);
 
@@ -166,15 +166,39 @@ function onWindowResize() {
 }
 
 
+// Mouse interaction with ARTHUR CROSS
+
+const arthurLink = document.getElementsByClassName('arthurLink')[0];
+
+
+arthurLink.addEventListener('mouseover', () => {
+  if (model) {
+    model.rotation.x += 0.1;
+    model.rotation.y += 0.1;
+    model.children[0].material.emissive = new THREE.Color( 0xDFFF1C );
+}
+});
+
+arthurLink.addEventListener('mouseout', () => {
+  model.rotation.x += 0.1;
+  model.rotation.y += 0.1;
+  model.children[0].material.emissive = new THREE.Color( 0xFFFFFF );
+});
+
+
+
 
 
 function animate() {
   requestAnimationFrame(animate);
 
+
+
   if (model) {
     model.rotation.x += 0.0001; // Rotate around the x-axis
     model.rotation.y += 0.0002; // Rotate around the y-axis
     model.rotation.z += 0.0001; // Rotate around the z-axis
+
 
   }
 
