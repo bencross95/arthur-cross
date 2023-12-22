@@ -30,7 +30,34 @@ body {
 
 h1 {
     font-family: Univers Bold Condensed;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 32px;
+    margin: 0;
 }
+
+h2 {
+    font-family: Univers Bold Condensed;
+    font-weight: bold;
+    padding-top: 24px;
+    line-height: 24px;
+}
+
+h3 {
+    font-family: Univers Bold Condensed;
+    font-weight: bold;
+    padding-top: 16px;
+    line-height: 20px;
+}
+
+strong {
+    font-family: Univers Bold Condensed;
+    font-weight: bold;
+  }
+
+em {
+    font-style: italic;
+  }
 
 
 .project-body {
