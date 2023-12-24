@@ -74,6 +74,8 @@ function init() {
         model.position.y = 2;
         model.position.z = -2;
 
+        model.rotation.x = 2;
+
         // model.children[0].material.opacity = 0
         
         // model.children[0].material.transparent = true
