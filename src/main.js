@@ -144,13 +144,13 @@ function init() {
   composer.addPass(new RenderPass(scene, camera));
 
 
-  const effect1 = new ShaderPass(RGBShiftShader);
-  effect1.uniforms["amount"].value = 0.001;
-  composer.addPass(effect1);
+  // const effect1 = new ShaderPass(RGBShiftShader);
+  // effect1.uniforms["amount"].value = 0.001;
+  // composer.addPass(effect1);
 
 
-  const effect3 = new OutputPass();
-  composer.addPass(effect3);
+  // const effect3 = new OutputPass();
+  // composer.addPass(effect3);
 
 
 
