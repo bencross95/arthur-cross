@@ -352,7 +352,7 @@ button {
     }
 
     canvas {
-        /* display: none !important; */
+        display: none !important;
     }
 
     body {
