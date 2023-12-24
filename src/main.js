@@ -207,20 +207,20 @@ function animate() {
 
 gsap.fromTo("canvas", { opacity: 0 }, { opacity: 0.5, delay: 1, duration: 3 });
 
-function isMobile() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
+// function isMobile() {
+//   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+// }
 
-// Stop rendering on mobile devices
-function stopRenderingOnMobile() {
-  if (isMobile()) {
-      // Cancel the animation frame request
-      cancelAnimationFrame(animate);
-  }
-}
+// // Stop rendering on mobile devices
+// function stopRenderingOnMobile() {
+//   if (isMobile()) {
+//       // Cancel the animation frame request
+//       cancelAnimationFrame(animate);
+//   }
+// }
 
-// Call the initialization function
-init();
+// // Call the initialization function
+// init();
 
-// Call the function to stop rendering on mobile
-stopRenderingOnMobile();
+// // Call the function to stop rendering on mobile
+// stopRenderingOnMobile();
