@@ -5,7 +5,7 @@ description: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
   Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi
   erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget
   urna mollis ornare vel eu leo.
-tag: Writing
+tag: Music Management & Marketing
 image: /assets/images/a4158520278_16.jpg
 ---
 
