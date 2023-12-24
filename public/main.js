@@ -133,6 +133,7 @@ function init() {
   gui.add(parameters, "z", 0, 50, 0.01).onChange(update);
 
   gui.hide();
+  gui.destroy();
 
   gsap.to(camera.position, { duration: 10, ease: "power2.out", z: 0 });
   
