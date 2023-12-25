@@ -1,12 +1,14 @@
 ---
 title: Tlya X An - TXN
 date: 2024-01-01
-description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-  auctor. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit
-  libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia
-  quam venenatis vestibulum.
+description: Bringing a heady cocktail of hyperpop, early-2000s R&B, trap and
+  deconstructed club music, Tlya X An's debut EP TXN is simply united by feeling
+  so damn good. Tlya's instinctive approach to melody and production mean that
+  every minor detail hits exactly where you want it to, while still feeling
+  starkly new. Each ad lib and synth line hits like a drop of sherbet on your
+  tongue, with her saccharine sense for melody perfectly balanced by a menacing
+  sense of humor.
 tag: Music Management & Marketing
 image: /assets/images/a0865851476_16.jpg
 ---
-
-Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Bringing a heady cocktail of hyperpop, early-2000s R&B, trap and deconstructed club music, Tlya X An's debut EP TXN is simply united by feeling so damn good. Tlya's instinctive approach to melody and production mean that every minor detail hits exactly where you want it to, while still feeling starkly new. Each ad lib and synth line hits like a drop of sherbet on your tongue, with her saccharine sense for melody perfectly balanced by a menacing sense of humor.
