@@ -1,14 +1,17 @@
 ---
 title: Caroline Polachek Interview
 date: 2022-09-28T23:00:00.000Z
-description: Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta
-  sem malesuada magna mollis euismod. Donec sed odio dui. Aenean lacinia
-  bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis
-  euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo
-  risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget
-  risus varius blandit sit amet non magna. Etiam porta sem malesuada magna
-  mollis euismod. Etiam porta sem malesuada magna mollis euismod.
+description: In Caroline Polachek’s world, we are surrounded by fluidity,
+  systems and artefacts of a modern life imbued with a beauty and rich- ness
+  that represents both the dark and the light in our world. In between these
+  polarities of modern life lies an artist focused on the now, inherently
+  self-aware and deeply philosophical – an artist who is compelled to express
+  the intense emotions in life. Her creations are sewn together by the same gold
+  thread which can be traced through all historic artistic expressions of the
+  human condition. Listening to her music often feels like a heavy weight
+  pressing on your chest suddenly being lifted, or the sharp inhalation of cold
+  air at the top of a mountain just before passing out from oxygen deprivation.
 tag: Writing
 image: /assets/images/CarolinePolachek-square@2x.png
 ---
-Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Read the full interview [here.](https://metalmagazine.eu/post/caroline-polachek)
+In Caroline Polachek’s world, we are surrounded by fluidity, systems and artefacts of a modern life imbued with a beauty and rich- ness that represents both the dark and the light in our world. In between these polarities of modern life lies an artist focused on the now, inherently self-aware and deeply philosophical – an artist who is compelled to express the intense emotions in life. Her creations are sewn together by the same gold thread which can be traced through all historic artistic expressions of the human condition. Listening to her music often feels like a heavy weight pressing on your chest suddenly being lifted, or the sharp inhalation of cold air at the top of a mountain just before passing out from oxygen deprivation. Read the full interview [here.](https://metalmagazine.eu/post/caroline-polachek)
