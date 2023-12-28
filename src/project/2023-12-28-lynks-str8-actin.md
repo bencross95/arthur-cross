@@ -1,5 +1,5 @@
 ---
-title: Lynks - Str8 Actin'
+title: Lynks - Str8 Acting
 date: 2020-07-01T19:00:31.748Z
 description: A scolding critique of a ‘masc4masc’, straight-worshipping trend
   proliferating in queer culture.
