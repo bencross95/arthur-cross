@@ -1,6 +1,6 @@
 ---
 title: "Coucou Chloe "
-date: 2023-12-28T11:30:08.505Z
+date: 2022-01-17T11:30:08.505Z
 description: Coucou Chloe’s music often sounds like it's being played through
   speakers at a party that have already partly blown, destroyed by sub-bass. It
   creates a feeling of things being pushed to their limits. Her music demands to
