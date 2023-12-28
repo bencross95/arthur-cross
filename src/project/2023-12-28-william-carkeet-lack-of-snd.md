@@ -10,7 +10,8 @@ description: "'Lack of SND' is a sleepy, ambient collection of improvised
   inaudible frequencies and the sounds between spoken words. William says
   “conceptually, I envisioned this EP as a soundtrack that would carve out a
   space of quiet introspection in the listener's mind—a place where they could
-  contemplate what silence truly meant to them.”"
+  contemplate what silence truly meant to them.” [Listen
+  here](https://bfan.link/lack-of-snd)."
 tag: Project Management
 image: /assets/images/3617229573535-1-.jpg
 ---
