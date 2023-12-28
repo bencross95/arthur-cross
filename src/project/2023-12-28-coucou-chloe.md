@@ -1,5 +1,5 @@
 ---
-title: "Coucou Chloe "
+title: Coucou Chloe - Letting Go
 date: 2022-01-17T11:30:08.505Z
 description: Coucou Chloe’s music often sounds like it's being played through
   speakers at a party that have already partly blown, destroyed by sub-bass. It
