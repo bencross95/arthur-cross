@@ -1,5 +1,5 @@
 ---
-title: "Sevdaliza Interview - SS22 Cover "
+title: "Sevdaliza - SS22 Cover "
 date: 2022-03-01T00:00:00.000Z
 description: Sevdaliza is an artist who has always been at the forefront of
   creativity, from early videos delving into 3D render work to her outstanding
