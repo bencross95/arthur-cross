@@ -1,5 +1,5 @@
 ---
-title: Zoee - Wake Up To My Imagination
+title: Zoee
 date: 2021-09-17T10:17:27.721Z
 description: Zoee’s journey as an artist has been interesting, hidden at first
   as the anonymous vocalist from Hey QT the iconic PC music banger. She then
