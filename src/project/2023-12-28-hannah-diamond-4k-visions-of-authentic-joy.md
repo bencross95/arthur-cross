@@ -6,6 +6,6 @@ description: The alacrity with which Hannah Diamond welcomes you into the world
   swirling pixelated sophomore whose glittering pop orbits an authentic joy;
   Perfect Picture feels like Hannah Diamond’s best work yet.
 tag: Writing
-image: /assets/images/self-portrait-by-hannah-diamond-co-photographer-carina-kehlet-schou.jpeg
+image: /assets/images/instagram-post-8-1-.png
 ---
 The alacrity with which Hannah Diamond welcomes you into the world of her second album is disarmingly brilliant and brimming with confidence. A swirling pixelated sophomore whose glittering pop orbits an authentic joy; Perfect Picture feels like Hannah Diamond’s best work yet. Full article [here. ](https://metalmagazine.eu/post/hannah-diamond)
