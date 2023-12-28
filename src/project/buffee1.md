@@ -1,6 +1,6 @@
 ---
 title: Tlya X An - TXN
-date: 2024-01-01
+date: 2023-04-27T23:00:00.000Z
 description: Bringing a heady cocktail of hyperpop, early-2000s R&B, trap and
   deconstructed club music, Tlya X An's debut EP TXN is simply united by feeling
   so damn good. Tlya's instinctive approach to melody and production mean that
