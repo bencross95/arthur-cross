@@ -1,5 +1,5 @@
 ---
-title: Caroline Polachek Interview
+title: "Caroline Polachek - Autumn/Winter 2021-2022 Cover "
 date: 2022-09-28T23:00:00.000Z
 description: In Caroline Polachek’s world, we are surrounded by fluidity,
   systems and artefacts of a modern life imbued with a beauty and rich- ness
