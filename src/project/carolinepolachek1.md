@@ -1,5 +1,5 @@
 ---
-title: "Caroline Polachek - Autumn/Winter 2021-2022 Cover "
+title: "Caroline Polachek - AW21 Cover "
 date: 2021-11-23T00:00:00.000Z
 description: In Caroline Polachek’s world, we are surrounded by fluidity,
   systems and artefacts of a modern life imbued with a beauty and rich- ness
