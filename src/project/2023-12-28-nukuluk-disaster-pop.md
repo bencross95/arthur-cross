@@ -14,4 +14,4 @@ Nukuluk is an experimental hip-hop collective based in South London. Their chaot
 
 
 
-> "Anarchic and wired-up experimental hip-hop from the New Weird Britain scene" - NME
+> Anarchic and wired-up experimental hip-hop from the New Weird Britain scene - NME
