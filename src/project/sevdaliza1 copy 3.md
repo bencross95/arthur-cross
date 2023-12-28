@@ -9,8 +9,8 @@ description: On their sophomore effort Tusky, surrealist duet Robbie & Mona
 tag: "Project Management and Artist Management "
 image: /assets/images/a1102531382_16.jpg
 ---
-On their sophomore effort Tusky, surrealist duet Robbie & Mona ascend beyond the lo-fi scrawlings of their debut album to something altogether more grandiose. Between the lights down drama of sprawling opener ‘Sensation’, to the ‘roll credits’ coda of closer ‘Always Gonna Be A Dead Man’, Tusky exists as a glitzy, lucid journey playing out before the listener.
+On their sophomore effort Tusky, surrealist duet Robbie & Mona ascend beyond the lo-fi scrawlings of their debut album to something altogether more grandiose. Between the lights down drama of sprawling opener ‘Sensation’, to the ‘roll credits’ coda of closer ‘Always Gonna Be A Dead Man’, Tusky exists as a glitzy, lucid journey playing out before the listener. [Listen here](https://bfan.link/tusky). [](https://robbieandmona.bandcamp.com/album/tusky)
 
-## Links
+![](/assets/images/sensation-press-shot.webp)
 
-[Bandcamp](https://robbieandmona.bandcamp.com/album/tusky)
+![](/assets/images/fq3pm8fxoaelhpx.jpeg)
