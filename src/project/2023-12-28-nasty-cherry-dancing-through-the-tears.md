@@ -1,5 +1,5 @@
 ---
-title: Nasty Cherry - Dancing Through The Tears
+title: Nasty Cherry
 date: 2021-04-02T10:08:08.552Z
 description: Nasty Cherry emerge out of precious time spent in lockdown
   recording sessions drenched in melancholia and with a deftly crafted EP 'The
