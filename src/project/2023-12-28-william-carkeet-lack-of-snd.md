@@ -2,8 +2,7 @@
 title: William Carkeet - Lack of SND
 date: 2023-11-23T12:14:52.837Z
 description: "'Lack of SND' is a sleepy, ambient collection of improvised
-  compositions and tape loops which engulf the listener into its
-  space...[](https://bfan.link/lack-of-snd)"
+  compositions and tape loops which engulf the listener into its space...."
 tag: Project Management
 image: /assets/images/3617229573535-1-.jpg
 ---
