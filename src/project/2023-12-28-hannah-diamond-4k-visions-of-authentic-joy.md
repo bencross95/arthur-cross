@@ -1,5 +1,5 @@
 ---
-title: Hannah Diamond - 4k Visions of Authentic Joy
+title: Hannah Diamond
 date: 2023-10-25T10:35:34.149Z
 description: The alacrity with which Hannah Diamond welcomes you into the world
   of her second album is disarmingly brilliant and brimming with confidence. A
