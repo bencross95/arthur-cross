@@ -1,6 +1,6 @@
 ---
 title: "H. L. Grail - Island "
-date: 2024-02-10T20:48:00.372Z
+date: 2023-02-10T20:48:00.372Z
 description: Cooling off from a busy year touring with her Rough Trade-signed
   band Goat Girl,  songwriter, multi-instrumentalist and aspiring producer Holly
   Mullineaux unveils a new solo project. Written in a seaside apartment in
