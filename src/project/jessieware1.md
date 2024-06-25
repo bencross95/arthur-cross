@@ -9,11 +9,7 @@ description: Do you ever imagine yourself passing through hardships, the
   that who would tell you that everything was going to be okay on the other
   side? It feels not only has Jessie Ware been on this journey but is the person
   on the other side reaching her hand out to you, with reassurance and abundant
-  joy. A person you want to meet in the smoking area of a club when you are
-  feeling overwhelmed by the intensity of life to guide you through it, get you
-  back on track and bring you once more into the dance! In fact you might even
-  find she put the event on herself so much does she relish in bringing people
-  together to shake off their troubles and feel connected.
+  joy.
 tag: Writing
 image: /assets/images/instagram-post-17-1-.png
 ---
