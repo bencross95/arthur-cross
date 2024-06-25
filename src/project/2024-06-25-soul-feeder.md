@@ -1,6 +1,6 @@
 ---
 title: Soul Feeder
-date: 2024-06-26T00:08:00.000Z
+date: 2024-02-26T01:08:00.000Z
 description: The word community has in many ways become a vacuous marketing
   phrase detached from its original meaning. So it feels increasingly special to
   come across collectives with an actual pure spirit of community at its heart,
