@@ -74,6 +74,15 @@ canvas {
     z-index: -100;
 }
 
+img {
+    content-visibility: auto;
+}
+
+.project-list-img img {
+    display: block;
+    object-fit: cover;
+}
+
 #hidden-info {
     display: none;
     /* display: block; */
