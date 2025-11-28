@@ -13,7 +13,7 @@ layout: 'layouts/home.njk'
 <div class="sectionMargin pb4">
     {% for project in collections.project | reverse %}
 
-    <div class="flex justify-between home-project-div mt3">
+    <div class="flex justify-between home-project-div mt3" data-project-image="{{ project.data.image }}">
 
         <div class="parent projectItemList">
             <div class="div1 listTitle">{{ project.data.title }}</div>

@@ -43,56 +43,57 @@ function init() {
 
   new OrbitControls(camera, renderer.domElement);
 
-  
+  // Load assets in PARALLEL for faster loading
+  const rgbeLoader = new RGBELoader().setPath("assets/3d/");
+  const gltfLoader = new GLTFLoader().setPath("assets/3d/");
 
-  // Bits
-  new RGBELoader()
-    .setPath("assets/3d/")
-    .load("kloofendal_43d_clear_puresky_2k.hdr", function (texture) {
+  // Start loading both assets simultaneously
+  const hdrPromise = new Promise((resolve, reject) => {
+    rgbeLoader.load(
+      "kloofendal_43d_clear_puresky_2k.hdr",
+      resolve,
+      undefined,
+      reject
+    );
+  });
+
+  const modelPromise = new Promise((resolve, reject) => {
+    gltfLoader.load(
+      "arthur-depthcore-v0.02.gltf",
+      resolve,
+      undefined,
+      reject
+    );
+  });
+
+  // Wait for both to load in parallel
+  Promise.all([hdrPromise, modelPromise])
+    .then(async ([texture, gltf]) => {
+      // Set up environment
       texture.mapping = THREE.EquirectangularReflectionMapping;
-
       scene.background = texture;
       scene.environment = texture;
 
+      // Set up model
+      model = gltf.scene;
+      await renderer.compileAsync(model, camera, scene);
+      scene.add(model);
 
+      model.position.x = 0;
+      model.position.y = 2;
+      model.position.z = -2;
+      model.rotation.x = 2;
 
-      // animate();
-
-      // model
-
-      const loader = new GLTFLoader().setPath("assets/3d/");
-      loader.load("arthur-depthcore-v0.02.gltf", async function (gltf) {
-        model = gltf.scene;
-
-        // wait until the model can be added to the scene without blocking due to shader compilation
-
-        await renderer.compileAsync(model, camera, scene);
-
-        scene.add(model);
-
-        model.position.x = 0;
-        model.position.y = 2;
-        model.position.z = -2;
-
-        model.rotation.x = 2;
-
-        // model.children[0].material.opacity = 0
-        
-        // model.children[0].material.transparent = true
-
-        // model.children[0].material.emissive = new THREE.Color( 0xff0000 );
-        model.children[0].material.emissive = new THREE.Color( 0xffffff );
-
-        // console.log(model.children[0].material.emissive);
-        // model.material.wireframe = false;
-
-        // gsap.to(model.position, { duration: 10, ease: "power2.out", z: 2 });
-
-        
-
-
-        // animate();
-      });
+      // Set emissive to black so textures are visible
+      model.children[0].material.emissive = new THREE.Color(0x000000);
+      
+      // Enable texture support
+      if (!model.children[0].material.map) {
+        model.children[0].material.color = new THREE.Color(0xffffff);
+      }
+    })
+    .catch((error) => {
+      console.error("Error loading 3D assets:", error);
     });
 
   // Sky
@@ -173,19 +174,71 @@ function onWindowResize() {
 
 const arthurLink = document.getElementsByClassName('arthurLink')[0];
 
+if (arthurLink) {
+  arthurLink.addEventListener('mouseover', () => {
+    if (model) {
+      // Animate rotation smoothly like project hover
+      gsap.to(model.rotation, { 
+        duration: 0.8, 
+        ease: "power2.out", 
+        x: model.rotation.x + 0.3,
+        y: model.rotation.y + 0.3
+      });
+      model.children[0].material.emissive = new THREE.Color( 0xDFFF1C );
+    }
+  });
 
-arthurLink.addEventListener('mouseover', () => {
-  if (model) {
-    model.rotation.x += 0.2;
-    model.rotation.y += 0.2;
-    model.children[0].material.emissive = new THREE.Color( 0xDFFF1C );
+  arthurLink.addEventListener('mouseout', () => {
+    if (model) {
+      model.children[0].material.emissive = new THREE.Color( 0x000000 );
+    }
+  });
 }
-});
 
-arthurLink.addEventListener('mouseout', () => {
-  model.rotation.x += 0.2;
-  model.rotation.y += 0.2;
-  model.children[0].material.emissive = new THREE.Color( 0xFFFFFF );
+// Project hover interaction - change model texture
+const projectDivs = document.querySelectorAll('.home-project-div');
+const textureLoader = new THREE.TextureLoader();
+let originalTexture = null;
+
+projectDivs.forEach(projectDiv => {
+  projectDiv.addEventListener('mouseenter', () => {
+    if (model && model.children[0]) {
+      const imageUrl = projectDiv.getAttribute('data-project-image');
+      
+      // Rotate the model on hover
+      gsap.to(model.rotation, { 
+        duration: 0.8, 
+        ease: "power2.out", 
+        x: model.rotation.x + 0.3,
+        y: model.rotation.y + 0.3
+      });
+      
+      // Load and apply the project image as texture
+      textureLoader.load(imageUrl, (texture) => {
+        texture.colorSpace = THREE.SRGBColorSpace;
+        texture.flipY = false; // May need to adjust based on your model's UV mapping
+        
+        // Store original state on first hover
+        if (!originalTexture) {
+          originalTexture = model.children[0].material.map;
+        }
+        
+        // Apply new texture and make sure emissive doesn't wash it out
+        model.children[0].material.map = texture;
+        model.children[0].material.emissive = new THREE.Color(0x000000);
+        model.children[0].material.needsUpdate = true;
+      });
+    }
+  });
+
+  projectDiv.addEventListener('mouseleave', () => {
+    if (model && model.children[0]) {
+      // Restore original texture
+      model.children[0].material.map = originalTexture || null;
+      model.children[0].material.emissive = new THREE.Color(0x000000);
+      model.children[0].material.needsUpdate = true;
+    }
+  });
 });
 
 
