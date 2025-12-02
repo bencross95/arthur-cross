@@ -91,6 +91,70 @@ function init() {
       if (!model.children[0].material.map) {
         model.children[0].material.color = new THREE.Color(0xffffff);
       }
+
+      // Create wireframe duplicate
+      const wireframeGeometry = model.children[0].geometry.clone();
+      const wireframeMaterial = new THREE.MeshBasicMaterial({
+        color: 0xffffff,
+        wireframe: true,
+        transparent: true,
+        opacity: 0.3
+      });
+      const wireframeMesh = new THREE.Mesh(wireframeGeometry, wireframeMaterial);
+      
+      // Position wireframe at same position but different rotation
+      wireframeMesh.position.copy(model.children[0].position);
+      wireframeMesh.rotation.set(
+        model.children[0].rotation.x + 0.3,
+        model.children[0].rotation.y + 0.3,
+        model.children[0].rotation.z + 0.3
+      );
+      wireframeMesh.scale.copy(model.children[0].scale);
+      
+      // Add as child to model so it follows rotations
+      model.add(wireframeMesh);
+
+      // Create distorted semi-transparent duplicate
+      const distortedGeometry = model.children[0].geometry.clone();
+      
+      // Distort the geometry by modifying vertices with larger displacement
+      const positionAttribute = distortedGeometry.attributes.position;
+      for (let i = 0; i < positionAttribute.count; i++) {
+        const x = positionAttribute.getX(i);
+        const y = positionAttribute.getY(i);
+        const z = positionAttribute.getZ(i);
+        
+        // Apply larger distortion
+        positionAttribute.setXYZ(
+          i,
+          x + (Math.random() - 0.5) * 0.8,
+          y + (Math.random() - 0.5) * 0.8,
+          z + (Math.random() - 0.5) * 0.8
+        );
+      }
+      distortedGeometry.attributes.position.needsUpdate = true;
+      distortedGeometry.computeVertexNormals();
+      
+      const distortedMaterial = new THREE.MeshBasicMaterial({
+        color: 0xffffff,
+        transparent: true,
+        opacity: 0.2,
+        side: THREE.DoubleSide,
+        flatShading: true // Less detailed shading
+      });
+      const distortedMesh = new THREE.Mesh(distortedGeometry, distortedMaterial);
+      
+      // Position distorted mesh
+      distortedMesh.position.copy(model.children[0].position);
+      distortedMesh.rotation.set(
+        model.children[0].rotation.x - 0.2,
+        model.children[0].rotation.y - 0.2,
+        model.children[0].rotation.z - 0.2
+      );
+      distortedMesh.scale.copy(model.children[0].scale);
+      
+      // Add as child to model so it follows rotations
+      model.add(distortedMesh);
     })
     .catch((error) => {
       console.error("Error loading 3D assets:", error);
@@ -166,7 +230,7 @@ function onWindowResize() {
   camera.updateProjectionMatrix();
 
   renderer.setSize(window.innerWidth, window.innerHeight);
-  animate();
+  composer.setSize(window.innerWidth, window.innerHeight);
 }
 
 
